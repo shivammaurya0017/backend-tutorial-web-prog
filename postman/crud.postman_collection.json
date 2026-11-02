@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "180c03e6-1722-4d26-8a1c-ec53b1b79cc7",
+    "name": "crud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59388256",
+    "_collection_link": "https://go.postman.co/collection/59388256-180c03e6-1722-4d26-8a1c-ec53b1b79cc7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"roman\",\r\n    \"description\": \"cinephile\",\r\n    \"age\": 14\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/v1/posts/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "v1",
+            "posts",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all posts",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/v1/posts/getPosts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "v1",
+            "posts",
+            "getPosts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update post",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Lily\",\r\n    \"description\": \"aa cute flower\",\r\n    \"age\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/v1/posts/update/6ae7ad3d26383cb635c74fc8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "v1",
+            "posts",
+            "update",
+            "6ae7ad3d26383cb635c74fc8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete post",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/v1/posts/delete/6ae7ad3d26383cb635c74fc8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "v1",
+            "posts",
+            "delete",
+            "6ae7ad3d26383cb635c74fc8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
